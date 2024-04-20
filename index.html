@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangeetkar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <style>
+            body {
+                background-image: url('IndianClassical.jpg');
+                background-attachment: fixed;
+                background-size: cover;
+            }
+        </style>
+
+        <div class="navbar">
+            <div class="icon">
+                <a href="index.html">
+                <img src="Screensho.png" alt="Logo" class="logo">
+                </a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="Explore.html">EXPLORE</a></li>
+                    <li><a href="fav.html">FAVOURITE</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input id="searchInput" class="srch" type="search" name="" placeholder="Search Here">
+                <button class="btn" onclick="searchSong()">Search</button>
+            </div>
+            <div class="login">
+                <a href="login.html"> <button class="btn">Login</button></a>
+            </div>
+            <div class="icons">
+                <a href="https://www.facebook.com"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://www.instagram.com"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://www.twitter.com"><ion-icon name="logo-twitter"></ion-icon></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h2 class="playing">Now playing- <span class="song-name"></span></h2>
+            <div class="controls">
+                <button class="btn previous"><i class="ph-bold ph-skip-back"></i></button>
+                <button class="btn play-pause" onclick="togglePlayPause()">
+                    <i id="play-pause-icon" class="ph-bold ph-play"></i>
+                </button>
+                <button class="btn next"><i class="ph-bold ph-skip-forward"></i></button>
+            </div>
+        </div>
+
+        <script src="sangeetkar.js">
+          // Function to search for a song
+// function searchSong() {
+//     var searchTerm = document.getElementById("searchInput").value;
+//     var songPath = "songs/" + searchTerm + ".mp3"; // Update with your actual song directory
+
+//     var audioPlayer = document.getElementById("audioPlayer");
+//     audioPlayer.src = songPath;
+//     audioPlayer.play();
+
+//     var songNameElement = document.querySelector(".song-name");
+//     songNameElement.textContent = searchTerm;
+// }
+
+// // Function to toggle play/pause
+// function togglePlayPause() {
+//     var audioPlayer = document.getElementById("audioPlayer");
+//     var playPauseIcon = document.getElementById("play-pause-icon");
+
+//     if (audioPlayer.paused) {
+//         audioPlayer.play();
+//         playPauseIcon.classList.remove("ph-play");
+//         playPauseIcon.classList.add("ph-pause");
+//     } else {
+//         audioPlayer.pause();
+//         playPauseIcon.classList.remove("ph-pause");
+//         playPauseIcon.classList.add("ph-play");
+//     }
+// }
+
+//         </script>
+//     </div>
+</body>
+
+</html>
